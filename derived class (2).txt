@@ -1,0 +1,19 @@
+// Derived class Cat that inherits from Animal
+public class Cat extends Animal {
+    // Overriding the makeSound method
+    @Override
+    public void makeSound() {
+        System.out.println("Meow Meow");
+    }
+    
+    // Overriding the showType method
+    @Override
+    public void showType() {
+        System.out.println("I am a cat.");
+    }
+    
+    // Additional method specific to Cat
+    public void scratch() {
+        System.out.println("Scratching the furniture!");
+    }
+}

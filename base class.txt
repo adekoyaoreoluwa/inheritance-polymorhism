@@ -1,0 +1,12 @@
+// Base class Animal
+public class Animal {
+    // Method to be overridden by subclasses
+    public void makeSound() {
+        System.out.println("Some generic animal sound");
+    }
+    
+    // Method to show the type of animal
+    public void showType() {
+        System.out.println("I am an animal.");
+    }
+}

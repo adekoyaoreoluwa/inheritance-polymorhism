@@ -1,0 +1,31 @@
+// Main class to demonstrate inheritance and polymorphism
+public class Main {
+    public static void main(String[] args) {
+        // Create instances of Animal, Dog, and Cat
+        Animal myAnimal = new Animal();
+        Dog myDog = new Dog();
+        Cat myCat = new Cat();
+        
+        // Use polymorphism to call the overridden methods
+        Animal animal;
+        
+        // Pointing to Dog object
+        animal = myDog;
+        animal.makeSound(); // Output: Woof Woof
+        animal.showType();  // Output: I am a dog.
+        
+        // Pointing to Cat object
+        animal = myCat;
+        animal.makeSound(); // Output: Meow Meow
+        animal.showType();  // Output: I am a cat.
+        
+        // Using specific methods of Dog and Cat
+        if (myDog instanceof Dog) {
+            myDog.fetch(); // Output: Fetching the ball!
+        }
+        
+        if (myCat instanceof Cat) {
+            myCat.scratch(); // Output: Scratching the furniture!
+        }
+    }
+}

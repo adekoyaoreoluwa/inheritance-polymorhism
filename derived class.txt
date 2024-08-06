@@ -1,0 +1,19 @@
+// Derived class Dog that inherits from Animal
+public class Dog extends Animal {
+    // Overriding the makeSound method
+    @Override
+    public void makeSound() {
+        System.out.println("Woof Woof");
+    }
+    
+    // Overriding the showType method
+    @Override
+    public void showType() {
+        System.out.println("I am a dog.");
+    }
+    
+    // Additional method specific to Dog
+    public void fetch() {
+        System.out.println("Fetching the ball!");
+    }
+}
